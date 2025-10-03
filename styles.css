@@ -29,7 +29,7 @@ html, body {
   --max-width: 90%;
   --radius: 12px;
   --shadow: 0 6px 20px rgba(15,23,36,0.06);
-  --container-padding: 8%;
+  --container-padding: 5%;
 }
 body {
   margin: 0;
@@ -110,7 +110,7 @@ section {
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   color: var(--primary);
   margin-top: 18px;
   margin-bottom: 8px;
@@ -154,6 +154,28 @@ ul {
 /* ==========================
    Contact
    ========================== */
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr; /* altura del título automática */
+  gap: 20px;
+}
+
+#Contact-title {
+  grid-column: 1 / -1;      /* ocupa ambas columnas */
+  grid-row: 1;              /* primera fila */
+  margin: 0;                /* quita márgenes por defecto del h2 */
+}
+
+
+address {
+  grid-column: 1;           /* derecha */
+  grid-row: 2;              /* ya no pisa la fila 1 del título */
+  align-self: center;       /* centra verticalmente dentro de su fila */
+
+}
+
+
 address p {
   margin: 8px 0;
 }
@@ -165,6 +187,90 @@ address a {
 address a:hover,
 address a:focus {
   color: var(--accent);
+}
+/* ==========================
+  Contact Form Styles
+  ========================== */
+form {
+  grid-column: 2;           /* izquierda */
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 100%;
+  margin: 0,5%;
+  background: var(--card);
+  padding: 22px 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(15,23,36,0.07);
+}
+
+
+
+form label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 7px;
+  background: #f9fafb;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color 0.18s;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  background: #fff;
+}
+
+form textarea {
+  min-height: 90px;
+  max-height: 260px;
+}
+
+form button,
+form input[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.18s, transform 0.12s;
+  margin-top: 8px;
+}
+
+form button:hover,
+form input[type="submit"]:hover,
+form button:focus,
+form input[type="submit"]:focus {
+  background: var(--accent);
+  transform: translateY(-2px) scale(1.02);
+}
+
+form .form-message {
+  color: var(--muted);
+  font-size: 0.97rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+  form {
+   padding: 14px 6px;
+   max-width: 100%;
+  }
 }
 
 /* ==========================
