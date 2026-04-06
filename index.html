@@ -1,110 +1,411 @@
-<!--Fijar la barra de navegacion-->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erick Morales</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Portafolio personal de Erick Alejandro Morales Lucio, estudiante de Ingeniería en Informática.">
-    <meta name="keywords" content="Erick Morales, Informática, Programación, Proyectos, Portafolio, IPN, UPIICSA">
-
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erick Morales | Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Portfolio of Erick Morales — Backend Developer (Laravel/Python), APIs and data automation."
+    />
+    <meta
+      name="keywords"
+      content="Erick Morales, Backend Developer, Laravel, Livewire, FastAPI, MySQL, APIs, IPN, UPIICSA"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-name">Erick Morales</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+          </li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Work</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="lang-toggle"
+            id="lang-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Toggle language"
+          >
+            EN | ES
+          </button>
+          <a
+            class="btn btn-small"
+            href="mailto:erickmora0503@gmail.com"
+            data-i18n="nav.cta"
+            >Email</a
+          >
+        </div>
+      </nav>
     </header>
+
     <main>
-        <section id="about">
-            <div class="profile-pic">
-                <!-- Foto de perfil --> 
-                <img src="Pictures\profilePicture.png" alt="Foto de perfil de Erick Morales" class="profile-img">
-                <h1>Erick Alejandro Morales Lucio</h1>
-            </div>
-            <h2>Extracto</h2>
-            <p>
-                Estudiante de Ingeniería en Informática (IPN - UPIICSA),
-                cursando su último semestre, en búsqueda de un espacio
-                para realizar servicio social donde pueda aplicar mis
-                conocimientos en programación, automatización e
-                inteligencia artificial. Me caracterizo por ser una persona
-                responsable, proactiva y con facilidad para aprender de
-                forma autodidacta. Tengo gran interés en seguir
-                desarrollándome en el área tecnológica.
-            </p>
-            <h2>Datos academicos</h2>
-            <dl>
-                <dt>Institución:</dt>
-                <dd>Instituto Politécnico Nacional</dd>
-                <dt>Escuela:</dt>
-                <dd>UPIICSA</dd>
-                <dt>Carrera:</dt>
-                <dd>Ingeniería en Informática</dd>
-            </dl>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Fundamentos de programacion</li>
-                <li>Fundamentos de SQL</li>
-                <li>Fundamentos de redes</li>
-                <li>Manejo de paqueteria de office</li>
-                <li>Mantenimiento preventivo a equipos</li>
-                <li>Familiaridad con APIs REST</li>
-                <li>Desarrollo en arduino</li>
-                <li>Desarrollo de agentos de IA</li>
-                <li>Manejo de Git</li>
-                <li>Trabajo en equipo</li>
-                <li>Resolucion de problemas</li>
-                <li>Pensamiento critico</li>
-            </ul>
+      <section id="about" class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">
+            Backend Developer · Laravel / Python
+          </p>
+          <h1 data-i18n="hero.title">
+            I build backend systems with complex business logic and strong data
+            integrity using Laravel and Python.
+          </h1>
+          <p class="lede" data-i18n="hero.subtitle">
+            I focus on clean code, automation, and structured data so teams ship
+            faster and safer.
+          </p>
+          <div class="chips">
+            <span class="chip" data-i18n="hero.chip.location"
+              >Mexico City · GMT-6</span
+            >
+            <span class="chip chip-soft" data-i18n="hero.chip.availability"
+              >Open for backend roles / internships</span
+            >
+          </div>
+          <div class="cta">
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/erick-morales-ml"
+              target="_blank"
+              rel="noopener"
+              data-i18n="hero.cta.primary"
+              >View LinkedIn</a
+            >
             
-        </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <article>
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
-            </article>
-            <article>
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
-            </article>
-        </section>
-        <section id="contact">
-            <h2 id="Contact-title">Contacto</h2>
-                <form id="contact-form">
-                
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
+            <a
+              class="btn"
+              href="mailto:erickmora0503@gmail.com"
+              data-i18n="hero.cta.secondary"
+              >Email me</a
+            >
+            <a 
+              class="btn"
+              href="https://github.com/ErickMoraL"
+              target="_blank"
+              rel="noopener"
+              data-i18n="hero.cta.tertiary"
+              >View GitHub</a
+            >
+          </div>
+          <div class="quick-grid">
+            <div class="quick-card">
+              <span class="label" data-i18n="hero.quick.backend.label"
+                >Backend</span
+              >
+              <p data-i18n="hero.quick.backend.text">
+                Laravel 11+, Livewire, REST APIs, auth, queues, events.
+              </p>
+            </div>
+            <div class="quick-card">
+              <span class="label" data-i18n="hero.quick.frontend.label"
+                >Frontend</span
+              >
+              <p data-i18n="hero.quick.frontend.text">
+                Tailwind CSS, Alpine.js, accessible components, responsive
+                layouts.
+              </p>
+            </div>
+            <div class="quick-card">
+              <span class="label" data-i18n="hero.quick.data.label">Data</span>
+              <p data-i18n="hero.quick.data.text">
+                MySQL/PostgreSQL, Eloquent, migrations, seeders, data integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__aside">
+          <div class="card glass">
+            <img
+              src="Pictures/profilePicture.png"
+              alt="Photo of Erick Morales"
+              class="profile-img"
+            />
+            <div class="stack-list">
+              <span class="badge">Laravel</span>
+              <span class="badge">Livewire</span>
+              <span class="badge">Tailwind</span>
+              <span class="badge">Git</span>
+            </div>
+            <div class="note" data-i18n="hero.note">
+              Focused on DX: efficient scaffolding, testing with Pest/PHPUnit,
+              and smooth deployments.
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="_replyto" required>
-                
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
+      <section id="experience" class="section">
+        <div class="section__header">
+          <h2 data-i18n="experience.heading">Experience</h2>
+          <p class="muted" data-i18n="experience.subhead">
+            Highlights from my recent roles.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="card project">
+            <div class="project__head">
+              <div>
+                <span class="badge badge-soft" data-i18n="experience.afac.title"
+                  >Backend Developer — AFAC</span
+                >
+                <h3 data-i18n="experience.afac.role">
+                  Agencia Federal de Aviación Civil
+                </h3>
+              </div>
+              <span class="tag" data-i18n="experience.afac.dates"
+                >Nov 2025 – Present</span
+              >
+            </div>
+            <ul class="project__list">
+              <li data-i18n="experience.afac.b1">
+                Built a government-level drone registration system handling
+                complex business rules, validation flows, and transactional data
+                integrity.
+              </li>
+              <li data-i18n="experience.afac.b2">
+                Designed a transactional MySQL schema and structured multi-step
+                capture flows.
+              </li>
+              <li data-i18n="experience.afac.b3">
+                Implemented DTO validation and transactional services to ensure
+                consistency.
+              </li>
+              <li data-i18n="experience.afac.b4">
+                Applied OOP/MVC patterns with SQL queries and data integrity
+                checks.
+              </li>
+            </ul>
+          </article>
 
-                    <button type="submit">Enviar</button>
+          <article class="card project">
+            <div class="project__head">
+              <div>
+                <span
+                  class="badge badge-soft"
+                  data-i18n="experience.fleetco.title"
+                  >Backend & AI Intern — Fleetco</span
+                >
+                <h3 data-i18n="experience.fleetco.role">Fleetco Oficial</h3>
+              </div>
+              <span class="tag" data-i18n="experience.fleetco.dates"
+                >Jan 2025 – Mar 2025</span
+              >
+            </div>
+            <ul class="project__list">
+              <li data-i18n="experience.fleetco.b1">
+                Created a REST API with FastAPI.
+              </li>
+              <li data-i18n="experience.fleetco.b2">
+                Built OCR with Tesseract to extract structured data.
+              </li>
+              <li data-i18n="experience.fleetco.b3">
+                Integrated OpenAI + LangChain for data validation and
+                structuring.
+              </li>
+              <li data-i18n="experience.fleetco.b4">
+                Automated data cleaning and normalization via Google Apps
+                Script.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-                </form>
-                <address>
-                    <p>
-                        <span aria-hidden="true">📧</span> 
-                        <a href="mailto:erickmora0503@gmail.com">erickmora0503@gmail.com</a><br />
-                        <span aria-hidden="true">📞</span> 
-                        <a href="tel:+525579928573">+52 55 7992 8573</a><br />
-                        <b>localizacion:</b> Ciudad de México, Alcaldía Iztapalapa
-                    </p>
-                </address>
+      <section id="skills" class="section">
+        <div class="section__header">
+          <h2 data-i18n="skills.heading">Skills</h2>
+          <p class="muted" data-i18n="skills.subhead">
+            Stacks and concepts I use to deliver maintainable backends.
+          </p>
+        </div>
+        <div class="pill-grid">
+          <span class="pill" data-i18n="skills.backend.1">PHP (Laravel)</span>
+          <span class="pill" data-i18n="skills.backend.2">Python</span>
+          <span class="pill" data-i18n="skills.backend.3"
+            >JavaScript (basic)</span
+          >
+          <span class="pill" data-i18n="skills.backend.4">SQL (MySQL)</span>
+          <span class="pill" data-i18n="skills.concepts.1">OOP</span>
+          <span class="pill" data-i18n="skills.concepts.2">MVC</span>
+          <span class="pill" data-i18n="skills.concepts.3">REST APIs</span>
+          <span class="pill" data-i18n="skills.concepts.4"
+            >Data validation</span
+          >
+          <span class="pill" data-i18n="skills.concepts.5">Transactions</span>
+          <span class="pill" data-i18n="skills.tools.1">Git</span>
+          <span class="pill" data-i18n="skills.tools.2">Livewire</span>
+          <span class="pill" data-i18n="skills.tools.3">FastAPI</span>
+          <span class="pill" data-i18n="skills.tools.4">Tesseract OCR</span>
+          <span class="pill" data-i18n="skills.tools.5">LangChain</span>
+          <span class="pill" data-i18n="skills.soft.1">Problem solving</span>
+          <span class="pill" data-i18n="skills.soft.2"
+            >Analytical thinking</span
+          >
+          <span class="pill" data-i18n="skills.soft.3">Collaboration</span>
+        </div>
+      </section>
 
-        </section>
+      <section id="projects" class="section">
+        <div class="section__header">
+          <h2 data-i18n="projects.heading">Selected Work</h2>
+          
+        </div>
+        <div class="project-grid">
+          <article class="card project">
+            <div class="project__head">
+              <span class="badge badge-soft" data-i18n="projects.p3.stack"
+                >Laravel + Livewire + WebSockets</span
+              >
+              <h3>
+                <a
+                  class="project__title"
+                  href="https://github.com/ErickMoraL/laravel_hexatech"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="projects.p3.title"
+                  >HexaTech — IT Support SaaS</a
+                >
+              </h3>
+            </div>
+            <p data-i18n="projects.p3.desc">
+              SaaS platform for IT management and remote support, featuring
+              multi-company access control, device monitoring, real-time
+              dashboards, and remote assistance sessions.
+            </p>
+            <div class="project__footer">
+              <span class="tag">SaaS</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Realtime</span>
+              <span class="tag">Laravel</span>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project__head">
+              <span class="badge badge-soft" data-i18n="projects.p2.stack"
+                >FastAPI + OCR + LLM</span
+              >
+              <h3>
+                <a
+                  class="project__title"
+                  href="https://github.com/ErickMoraL/AgenteLector"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="projects.p2.title"
+                  >AgenteLector API — Intelligent Document Processing</a
+                >
+              </h3>
+            </div>
+            <p data-i18n="projects.p2.desc">
+              API service that processes tickets and invoices using OCR and LLMs
+              to extract structured data, classify documents, and return
+              validated fields with token-level usage metrics.
+            </p>
+            <div class="project__footer">
+              <span class="tag">FastAPI</span>
+              <span class="tag">OCR</span>
+              <span class="tag">LLM</span>
+              <span class="tag">REST</span>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project__head">
+              <span class="badge badge-soft" data-i18n="projects.p1.stack"
+                >FastAPI + MCP + N8N</span
+              >
+              <h3>
+                <a
+                  class="project__title"
+                  href="https://github.com/ErickMoraL/conexion_excel"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="projects.p1.title"
+                  >AI Workflow Automation — Excel Integration</a
+                >
+              </h3>
+            </div>
+            <p data-i18n="projects.p1.desc">
+              AI-driven workflow that enables remote CRUD operations on local
+              Excel files through natural language commands using MCP, N8N, and
+              a FastAPI backend.
+            </p>
+            <div class="project__footer">
+              <span class="tag">Automation</span>
+              <span class="tag">AI Agents</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Integration</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact__text">
+          <h2 data-i18n="contact.heading">Contact</h2>
+          <div class="contact__meta">
+            <p>
+              <strong data-i18n="contact.email.label">Email:</strong>
+              <a href="mailto:erickmora0503@gmail.com"
+                >erickmora0503@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong data-i18n="contact.phone.label">Phone:</strong>
+              <a href="tel:+525623852008">+52 5623852008</a>
+            </p>
+            <p>
+              <strong data-i18n="contact.location.label">Location:</strong>
+              <span data-i18n="contact.location.value">Mexico City</span>
+            </p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a
+                href="https://www.linkedin.com/in/erick-morales-ml"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/in/erick-morales-ml</a
+              >
+            </p>
+            <p>
+              <strong data-i18n="contact.github.label">GitHub:</strong>
+              <a
+                href="https://github.com/ErickMoraL"
+                target="_blank"
+                rel="noopener"
+                >github.com/ErickMoraL</a
+              >
+            </p>
+            <p>
+              <strong data-i18n="contact.availability.label">Availability:</strong>
+              <span data-i18n="contact.availability.value"
+                >Open for backend roles</span
+              >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Erick Morales</p>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.text">&copy; 2026 Erick Morales</p>
     </footer>
+
+    <script src="translations-en.js"></script>
+    <script src="translations-es.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
+</html>
