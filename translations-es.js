@@ -21,7 +21,7 @@ window.TRANSLATIONS_ES = {
   'hero.quick.frontend.text': 'Tailwind CSS, Alpine.js, componentes accesibles y layouts responsivos.',
   'hero.quick.data.label': 'Datos',
   'hero.quick.data.text': 'MySQL/PostgreSQL, Eloquent, migraciones, seeders e integridad de datos.',
-  'hero.note': 'Enfocado en DX: scaffolding eficiente, pruebas con Pest/PHPUnit y despliegues fluidos.',
+  'hero.note': 'Enfocado en DX: scaffolding eficiente, modelos de datos claros y despliegues fluidos.',
 
   'experience.heading': 'Experiencia',
   'experience.subhead': 'Lo más relevante de mis roles recientes.',

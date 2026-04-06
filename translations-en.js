@@ -27,8 +27,7 @@ window.TRANSLATIONS_EN = {
   "hero.quick.data.text":
     "MySQL/PostgreSQL, Eloquent, migrations, seeders, data integrity.",
   "hero.note":
-    "Focused on DX: efficient scaffolding, testing with Pest/PHPUnit, and smooth deployments.",
-
+    "Focused on DX: efficient scaffolding, clear data models, and smooth deployments.",
   "experience.heading": "Experience",
   "experience.subhead": "Highlights from my recent roles.",
   "experience.afac.title": "Backend Developer — AFAC",
