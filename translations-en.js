@@ -19,7 +19,7 @@ window.TRANSLATIONS_EN = {
   "hero.cta.tertiary": "View GitHub",
   "hero.quick.backend.label": "Backend",
   "hero.quick.backend.text":
-    "Laravel 10+, Livewire, REST APIs, auth, queues, events.",
+    "Laravel 11+, Livewire, REST APIs, auth, queues, events.",
   "hero.quick.frontend.label": "Frontend",
   "hero.quick.frontend.text":
     "Tailwind CSS, Alpine.js, accessible components, responsive layouts.",

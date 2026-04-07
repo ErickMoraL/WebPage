@@ -16,7 +16,7 @@ window.TRANSLATIONS_ES = {
   'hero.cta.secondary': 'Enviar correo',
   'hero.cta.tertiary': 'Ver GitHub',
   'hero.quick.backend.label': 'Backend',
-  'hero.quick.backend.text': 'Laravel 10+, Livewire, APIs REST, auth, colas y eventos.',
+  'hero.quick.backend.text': 'Laravel 11+, Livewire, APIs REST, auth, colas y eventos.',
   'hero.quick.frontend.label': 'Frontend',
   'hero.quick.frontend.text': 'Tailwind CSS, Alpine.js, componentes accesibles y layouts responsivos.',
   'hero.quick.data.label': 'Datos',
